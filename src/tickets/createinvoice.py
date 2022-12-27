@@ -16,7 +16,7 @@ my_api = paypalrestsdk.Api({
 async def createinvoice(total, channel_id):
     invoice = Invoice({
         "merchant_info": {
-            "business_name": "PrismStudios",
+            "business_name": "Mixelate",
         },
         "items": [
             {
@@ -28,7 +28,7 @@ async def createinvoice(total, channel_id):
                 }
             }
         ],
-        "note": f"An order processed in the PrismStudios Discord server. ({channel_id})",
+        "note": f"An order processed in the Mixelate Discord server. ({channel_id})",
         "payment_term": {
             "term_type": "NET_45"
         }
